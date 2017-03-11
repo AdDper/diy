@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDEDED"
+    >
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:columnCount="3"
+        android:rowCount="2">
+
+        <!--合同管理-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:src="@mipmap/icon_hetong"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="合同管理"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+
+        <!--智能门锁-->
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:src="@mipmap/icon_home_content_2"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="智能门锁"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+
+
+        <!--预约维修-->
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:src="@mipmap/icon_home_content_3"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="预约维修"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+
+        <!--在线交租-->
+        <LinearLayout
+            android:layout_marginTop="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:src="@mipmap/icon_home_content_1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="在线交租"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+
+
+        <!--入住须知-->
+        <LinearLayout
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:src="@mipmap/icon_home_content_4"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="入住须知"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+
+    </GridLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#fff">
+
+        <TextView
+            android:id="@+id/text_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="×"
+            android:textSize="30sp"
+            android:layout_centerInParent="true"
+            android:textColor="#f00"/>
+    </RelativeLayout>
+</RelativeLayout>

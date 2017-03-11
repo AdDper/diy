@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDEDED">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <ImageView
+            android:id="@+id/login_icon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/default_head_image"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_icon"
+            android:layout_centerInParent="true"
+            android:textSize="20sp"
+            android:text="未登录"/>
+    </RelativeLayout>
+
+    <!--订单，缴费记录-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fff"
+        android:gravity="center"
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="预约维修订单"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:background="#EDEDED"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="预约维修订单"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--消息、收藏、管理-->
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#fff"
+        android:orientation="vertical">
+        <!--消息-->
+        <LinearLayout
+            android:id="@+id/linear_message"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            >
+            <ImageView
+                android:id="@+id/message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:src="@mipmap/icon_my_messag"
+                android:layout_centerVertical="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的消息"
+                android:layout_toRightOf="@id/message"
+                android:layout_alignBottom="@id/message"
+                android:layout_marginLeft="6dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right|center_vertical"
+                android:layout_marginRight="10dp">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_pay_item_a"
+                />
+
+            </LinearLayout>
+        </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EDEDED"/>
+        <!--收藏-->
+        <LinearLayout
+            android:id="@+id/linear_collections"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            >
+            <ImageView
+                android:id="@+id/collections"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:src="@mipmap/icon_mycollect"
+                android:layout_centerVertical="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的收藏"
+                android:layout_toRightOf="@id/message"
+                android:layout_alignBottom="@id/message"
+                android:layout_marginLeft="6dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right|center_vertical"
+                android:layout_marginRight="10dp">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_pay_item_a"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#EDEDED"/>
+            <!--活动管理-->
+            <LinearLayout
+                android:id="@+id/linear_activity_manage"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                >
+                <ImageView
+                    android:id="@+id/activitymanager"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:src="@mipmap/icon_action"
+                    android:layout_centerVertical="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="活动管理"
+                    android:layout_toRightOf="@id/message"
+                    android:layout_alignBottom="@id/message"
+                    android:layout_marginLeft="6dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center_vertical"
+                    android:layout_marginRight="10dp">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/icon_pay_item_a"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+    </LinearLayout>
+
+
+            <!--安全、认证、帮助中心-->
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="#fff"
+                android:orientation="vertical">
+                <!--安全-->
+                <LinearLayout
+                    android:id="@+id/linear_safe"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    >
+                    <ImageView
+                        android:id="@+id/icon_accout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:src="@mipmap/icon_accout"
+                        android:layout_centerVertical="true"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="账号安全"
+                        android:layout_toRightOf="@id/message"
+                        android:layout_alignBottom="@id/message"
+                        android:layout_marginLeft="6dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right|center_vertical"
+                        android:layout_marginRight="10dp">
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/icon_pay_item_a"
+                            />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#EDEDED"/>
+                <!--认证-->
+                <LinearLayout
+                    android:id="@+id/linear_renzheng"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    >
+                    <ImageView
+                        android:id="@+id/icon_renter_renzheng"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:src="@mipmap/icon_renter_renzheng"
+                        android:layout_centerVertical="true"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="租客认证"
+                        android:layout_toRightOf="@id/message"
+                        android:layout_alignBottom="@id/message"
+                        android:layout_marginLeft="6dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right|center_vertical"
+                        android:layout_marginRight="10dp">
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/icon_pay_item_a"
+                            />
+
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#EDEDED"/>
+                <!--帮助中心-->
+                <LinearLayout
+                    android:id="@+id/linear_help"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    >
+                    <ImageView
+                        android:id="@+id/icon_help"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:src="@mipmap/icon_help_center"
+                        android:layout_centerVertical="true"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="帮助中心"
+                        android:layout_toRightOf="@id/message"
+                        android:layout_alignBottom="@id/message"
+                        android:layout_marginLeft="6dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right|center_vertical"
+                        android:layout_marginRight="10dp">
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/icon_pay_item_a"
+                            />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--更多设置-->
+            <LinearLayout
+                android:id="@+id/linear_more_settings"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:background="#fff"
+                >
+                <ImageView
+                    android:id="@+id/icon_more_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:src="@mipmap/icon_more_setting"
+                    android:layout_centerVertical="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="更多设置"
+                    android:layout_toRightOf="@id/message"
+                    android:layout_alignBottom="@id/message"
+                    android:layout_marginLeft="6dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center_vertical"
+                    android:layout_marginRight="10dp">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/icon_pay_item_a"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

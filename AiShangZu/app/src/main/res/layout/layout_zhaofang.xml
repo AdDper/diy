@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+
+        <LinearLayout
+            android:background="#EDEDED"
+            android:layout_margin="10dp"
+            android:layout_width="0dp"
+            android:layout_weight="9"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_search_house"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="搜索优质房源"
+                android:textSize="15sp"
+                android:background="#00000000"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_map"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#EDEDED"/>
+    <LinearLayout
+        android:id="@+id/linear_pop"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        >
+        <!--区域-->
+        <LinearLayout
+            android:id="@+id/linear_area"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="区域"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_pop" android:layout_marginLeft="10dp"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:background="#EDEDED"/>
+        <!--租金-->
+        <LinearLayout
+            android:id="@+id/linear_rental"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="租金"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_pop"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:background="#EDEDED"/>
+        <!--默认排序-->
+        <LinearLayout
+            android:id="@+id/linear_default"
+            android:onClick="onpup_default"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="默认排序"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_pop"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:background="#EDEDED"/>
+        <!--更多-->
+        <LinearLayout
+            android:id="@+id/linear_more"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="更多"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_pop"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#EDEDED"/>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+        <com.github.jdsjlzx.recyclerview.LuRecyclerView
+            android:id="@+id/luRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+
+
+</LinearLayout>

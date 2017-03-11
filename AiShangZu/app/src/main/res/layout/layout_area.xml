@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/heihei"
+    >
+
+<!--    <fragment
+        android:id="@+id/fg_left"
+        android:name="com.zilong.findjob.aishangzu.content_fragment.Left_Fragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+    </fragment>
+
+    <FrameLayout
+        android:id="@+id/fl_iright"
+        android:orientation="horizontal"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+
+    </FrameLayout>
+&lt;!&ndash;    <fragment
+        android:name="com.zilong.findjob.aishangzu.content_fragment.Right_Fragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+    </fragment>&ndash;&gt;-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="此页面还在开发中"
+        android:textSize="25sp"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>

@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp">
+                <TextView
+                    android:id="@+id/zu_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="承租方式"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="#CFCFCF"
+                    />
+
+                <Button
+                    android:id="@+id/style_zhengzu"
+                    android:background="@drawable/back"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:text="整租"
+                    android:layout_marginBottom="10dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignLeft="@+id/zu_style"
+                    android:layout_alignStart="@+id/zu_style" />
+
+                <Button
+                    android:background="@drawable/back"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:text="合租"
+                    android:layout_toRightOf="@id/style_zhengzu"
+                    android:layout_alignBottom="@id/style_zhengzu"
+                    android:layout_marginLeft="10dp"
+                    />
+
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EDEDED"/>
+
+            <!--公寓类型-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp">
+                <TextView
+                    android:id="@+id/apart_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="公寓类型"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="#CFCFCF"
+                    />
+                <Button
+                    android:id="@+id/apart_pinpai"
+                    android:background="@drawable/back"
+                    android:layout_width="65dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:text="品牌公寓"
+                    android:layout_marginBottom="10dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignLeft="@+id/apart_style"
+                    android:layout_alignStart="@+id/apart_style" />
+
+                <Button
+                    android:background="@drawable/back"
+                    android:layout_width="65dp"
+                    android:layout_height="30dp"
+                    android:text="服务公寓"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/apart_pinpai"
+                    android:layout_alignBottom="@id/apart_pinpai"
+                    android:layout_marginLeft="10dp"
+                    />
+
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EDEDED"/>
+
+
+            <!--户型-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+                <TextView
+                    android:id="@+id/type_house"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="户型"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="#CFCFCF"
+                    />
+
+
+                <Button
+                    android:id="@+id/type_one"
+                    android:background="@drawable/back"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="30dp"
+                    android:text="一室"
+                    android:layout_marginBottom="10dp"
+                    android:layout_below="@id/type_house"
+                    android:layout_alignLeft="@+id/type_house"
+                    android:layout_alignStart="@+id/type_house" />
+
+                <Button
+                    android:id="@+id/type_two"
+                    android:background="@drawable/back"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:text="二室"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/type_one"
+                    android:layout_alignBottom="@id/type_one"
+                    android:layout_marginLeft="10dp"
+                    />
+
+
+                <Button
+                    android:id="@+id/type_three"
+                    android:background="@drawable/back"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="三室"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/type_two"
+                    android:layout_alignBottom="@id/type_two"
+                    />
+
+                <Button
+                    android:id="@+id/type_four"
+                    android:background="@drawable/back"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="四室"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/type_three"
+                    android:layout_alignBottom="@id/type_three"
+                    />
+                <Button
+                    android:background="@drawable/back"
+                    android:layout_width="75dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/type_one"
+                    android:text="五室及以上"
+                    android:layout_alignLeft="@id/type_one"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EDEDED"/>
+
+        <!--特色条件 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp">
+                <TextView
+                    android:id="@+id/special"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="特色条件"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="#CFCFCF"
+                    />
+                <Button
+                    android:id="@+id/special_duwei"
+                    android:background="@drawable/back"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:text="独卫"
+                    android:layout_marginBottom="10dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignLeft="@+id/special"
+                    android:layout_alignStart="@+id/special" />
+                <Button
+                    android:id="@+id/special_yangtai"
+                    android:background="@drawable/back"
+                    android:layout_width="55dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="带阳台"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/special_duwei"
+                    android:layout_alignBottom="@id/special_duwei"
+                    />
+
+                <Button
+                    android:background="@drawable/back"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="朝南"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/special_yangtai"
+                    android:layout_alignBottom="@id/special_yangtai"
+                    />
+
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EDEDED"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical">
+                <Button
+                    android:id="@+id/clear"
+                    android:background="@drawable/back"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="重置"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"/>
+
+                <Button
+                    android:layout_width="55dp"
+                    android:layout_height="30dp"
+                    android:text="确定"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_alignBottom="@id/clear"
+                    android:background="@drawable/red"/>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:background="#fff">
+
+    <TextView
+        android:id="@+id/bg"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#EDEDED"/>
+    <ImageView
+
+        android:layout_below="@id/bg"
+        android:id="@+id/activity_mainImg"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"/>
+    <TextView
+        android:id="@+id/activity_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:textSize="18sp"
+        android:text="标题"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/activity_mainImg"/>
+    <TextView
+        android:id="@+id/activity_typetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="类型"
+        android:layout_below="@id/activity_title"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"/>
+    <TextView
+        android:id="@+id/point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="·"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/activity_typetext"
+        android:layout_alignBaseline="@id/activity_typetext"
+        />
+    <TextView
+        android:id="@+id/tv_activity_joinNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/point"
+        android:layout_below="@id/activity_title"
+        android:text="0"
+        android:layout_marginLeft="10dp"
+        android:layout_alignBaseline="@id/activity_typetext"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="人报名"
+        android:layout_toRightOf="@id/tv_activity_joinNumber"
+        android:layout_alignBaseline="@id/activity_typetext"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity_typetext"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:layout_marginBottom="10dp"
+        >
+
+    <LinearLayout
+        android:id="@+id/apply"
+        android:background="@drawable/back"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:layout_marginLeft="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="报名截止至"/>
+        <TextView
+            android:id="@+id/endJoinTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="时间"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:background="@drawable/back"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:padding="2dp"
+        android:gravity="center_vertical"
+        android:id="@+id/linear_joinstatustext"
+        android:orientation="horizontal"
+        android:layout_toRightOf="@id/apply"
+        android:layout_alignBottom="@id/apply"
+        android:layout_marginLeft="10dp"
+        >
+        <TextView
+            android:id="@+id/joinstatustext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="活动状态"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@id/linear_joinstatustext"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:padding="5dp"
+        android:gravity="center"
+        android:background="@drawable/back">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥"
+            android:id="@+id/yuan"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="活动参加金额"
+            android:id="@+id/costtext"
+            android:layout_gravity="center_vertical"/>
+
+    </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

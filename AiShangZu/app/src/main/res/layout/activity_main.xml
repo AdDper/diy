@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zilong.findjob.aishangzu.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/fg_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10">
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EDEDED"/>
+    <RadioGroup
+        android:layout_gravity="bottom"
+        android:id="@+id/radioGroup_part"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/radio_shouye"
+            android:layout_marginTop="8dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="首页"
+            android:drawableTop="@drawable/selector_item_shouye"
+            />
+        <RadioButton
+            android:id="@+id/radio_zhaofang"
+            android:layout_marginTop="8dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="找房"
+            android:drawableTop="@drawable/selector_item_zhaofang"
+            />
+        <ImageView
+            android:id="@+id/image_center_main"
+            android:padding="5dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:src="@mipmap/tab_fuwu_normal"
+            />
+        <RadioButton
+            android:id="@+id/radio_shequ"
+            android:layout_marginTop="8dp"
+            android:drawableTop="@drawable/selector_item_shequ"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="社区"
+            />
+        <RadioButton
+            android:id="@+id/radio_wo"
+            android:layout_marginTop="8dp"
+            android:drawableTop="@drawable/selector_item_wo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="我"
+            />
+
+    </RadioGroup>
+</LinearLayout>

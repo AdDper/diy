@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <EditText
+        android:layout_marginTop="30dp"
+        android:background="#EDEDED"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:hint="手机号"
+        android:textSize="15sp"
+        android:paddingLeft="10dp"/>
+
+    <LinearLayout
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="#EDEDED">
+
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:hint="短信验证码"
+            android:textSize="15sp"
+            android:paddingLeft="10dp"/>
+
+        <Button
+            android:layout_gravity="center_vertical"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:text="获取短信验证码"
+            android:textSize="10sp"
+            android:background="#fff"
+            android:layout_marginRight="10dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="未注册的手机将自动注册为爱上租用户"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>
